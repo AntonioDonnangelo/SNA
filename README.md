@@ -1,25 +1,32 @@
 # SNA
 Final project Social Network Analysis (Master Big Data and AI)
 
-## The Edinburgh Associative Thesaurus:
-The Edinburgh Associative Thesaurus (EAT) is a set of word association norms showing the counts of word association as collected from subjects. This is not a developed semantic network such as WordNet (3), but empirical association data.
+The objective of the final project for the Social Network Analysis course is to apply the knowledge and skills acquired during the course to analyze a real social network. This project will enable a better understanding of the dynamics of social relationships and network structures in a specific context. 
 
-The traditional way to collect word association norms is to show or say a word to several people and ask them to say the word which first comes to their minds upon receiving the stimulus. The link established between the stimulus and the response is not semantically labelled (e.g. as synonym, antonym or by a case relation) and can only be regarded as an association.
+In particular we analyzed Arxiv HEP-TH (high energy physics theory) citation graph. This graph is from arXiv and covers all the citations. Edges from u to v indicate that a paper u cited another paper v. If a paper cites, or is cited by, a paper outside the dataset, the graph does not contain any information about this. The data is of the papers in the period from January 1993 to April 2003.
 
-The Edinburgh association norms were collected by growing the network from a nucleus set of words. Responses were collected to words in this nucleus set, then these responses were used to obtain further responses, and so on. In fact the cycle was repeated about three times since by then the number of different responses was so large that they could not be re-used as stimuli. Data collection stopped when 8400 stimulus words had been used. Each stimulus word was presented to 100 different subjects, each of whom received 100 words. This gave rise to a total of 55732 nodes in the Thesaurus network.
+The project consists of four parts.
 
-The subjects were mostly undergraduates from a wide variety of British universities. The age range of the subjects was from 17 to 22 with a mode of 19. The sex distribution was 64 per cent male and 36 per cent female. The data was collected between June 1968 and May 1971.
+**Project Structure:**
 
-The database consists of two files. The SR (stimulus-response) file, and the RS (response-stimulus) file. Where words have been truncated to 19 characters to save space the per cent character (%) has been placed as the 20th.
+1. **Identification of the Initial Dataset**
+   Select a network of interest from the networkrepository site, defining its context, the type of nodes (individuals, organizations, etc.), and the connections (relationships, interactions, etc.). The chosen network must consist of at least 15-20,000 nodes.
 
-The EAT here is that included in the MRC Psycholinguistic Database (4), for use with the other measures available there.
+2. **Analyze the Network Structure**
+   Use the network measures introduced in the first part of the course (degree distribution, density, clustering coefficient, centrality, assortativity, etc.) to characterize the selected dataset.
 
-## Reuters terror news network:
-Reuters terror news network Days.net in Pajek's format obtained from the CRA networks produced by Steve Corman and Kevin Dooley at Arizona State University.
-Please acknowledge this when publishing results based on these data.
+3. **Compare the Network with Null Models**
+   Compare the statistics calculated on the selected network with the expected values in the main null models discussed in class (ER, BA). Discuss and interpret the observed differences/similarities.
 
-The Reuters terror news network is based on all stories released during 66 consecutive days by the news agency Reuters concerning the September 11 attack on the U.S., beginning at 9:00 AM EST 9/11/01. The vertices of a network are words (terms); there is an edge between two words iff they appear in the same text unit (sentence). The weight of an edge is its frequency. The network has n = 13332 vertices (different words in the news) and m = 243447 edges, 50859 with value larger than 1. There are no loops in the network.
+4. **Analysis Task (Chosen by the Students)**
+   Select N analysis tasks from those proposed (where N is the number of group members minus 1), apply them to the selected network, and discuss the results obtained.
 
-The network DaysAll.net contains the main connected component of the network obtained by transforming the Reuters terror news network into a combined network for all 66 days (union of all time points). It has 13308 vertices.
 
-The Reuters terror news network was used as a case network for the Viszards visualization session on the Sunbelt XXII International Sunbelt Social Network Conference, New Orleans, USA, 13-17. February 2002.
+## Acknowledgements & Citation Policy
+@inproceedings{nr,
+     title={The Network Data Repository with Interactive Graph Analytics and Visualization},
+     author={Ryan A. Rossi and Nesreen K. Ahmed},
+     booktitle={AAAI},
+     url={https://networkrepository.com},
+     year={2015}
+}
