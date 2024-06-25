@@ -21,12 +21,27 @@ The project consists of four parts.
 4. **Analysis Task (Chosen by the Students)**
    Select N analysis tasks from those proposed (where N is the number of group members minus 1), apply them to the selected network, and discuss the results obtained.
 
+## Network Data Statistics
+Nodes	22.9K  
+Edges	2.7M  
+Density	0.0101881  
+Maximum degree	12K  
+Minimum degree	1  
+Average degree	233  
+Assortativity	0.0244996  
+Number of triangles	933.6M  
+Average number of triangles	40.8K  
+Maximum number of triangles	5M  
+Average clustering coefficient	0.809359  
+Fraction of closed triangles	0.313687  
+Maximum k-core	562  
+Lower bound of Maximum Clique	101  
 
 ## Acknowledgements & Citation Policy
-@inproceedings{nr,
-     title={The Network Data Repository with Interactive Graph Analytics and Visualization},
-     author={Ryan A. Rossi and Nesreen K. Ahmed},
-     booktitle={AAAI},
-     url={https://networkrepository.com},
-     year={2015}
-}
+@inproceedings{nr,  
+     title={The Network Data Repository with Interactive Graph Analytics and Visualization},  
+     author={Ryan A. Rossi and Nesreen K. Ahmed},  
+     booktitle={AAAI},  
+     url={https://networkrepository.com},  
+     year={2015}  
+}  
